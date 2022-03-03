@@ -17,7 +17,7 @@ public class Main {
         Valoare<String> v2 = new Valoare<String>();
         v2.set("alabala");
         System.out.println(v2.get());
-         */
+
 
         ListaSortata<Integer> listaSortata = new ListaSortata<>();
         listaSortata.insert(5);
@@ -30,6 +30,33 @@ public class Main {
         listaSortata.insert(8);
 
         listaSortata.afisare();
+
+        if(listaSortata.exista(10)){
+            System.out.println("Exista 10");
+        }
+        else{
+            System.out.println("Nu exista 10");
+        }
+
+        listaSortata.sterge(7);
+        listaSortata.afisare();
+         */
+
+        Stiva<Integer> stiva = new Stiva<>(5);
+
+        stiva.push(1);
+        stiva.push(2);
+        stiva.push(3);
+        stiva.push(4);
+        stiva.push(5);
+
+        System.out.println(stiva.peek());
+        System.out.println(stiva.peek());
+        System.out.println(stiva.peek());
+
+
+
+        ArrayList<Integer> coada = new ArrayList<>();
 
     }
 

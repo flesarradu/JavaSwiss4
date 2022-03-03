@@ -22,10 +22,30 @@ public class ListaSortata<T extends Comparable<T>> {
         }
     }
 
+    public void sterge(T x){
+        if(exista(x)){ //il sterg
+            list.remove(x);
+        }
+    }
+
+    public boolean exista(T x){
+        for(var y : list){
+            if(x.compareTo(y)==0){
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void afisare(){
         for(var x : list){
             System.out.print(x + " ");
         }
         System.out.print('\n');
     }
+
+    public int len(){
+        return list.size();
+    }
+
 }
